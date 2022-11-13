@@ -28,10 +28,11 @@ function print(x) {
 print("hello");
 print(a + " " + b);
 var cowsay = require("cowsay");
-
+var oneLinerJoke = require('one-liner-joke');var getRandomJoke = oneLinerJoke.getRandomJoke();
 console.log(cowsay.say({
-    text : "I'm a moooodule",
+    text : getRandomJoke.body,
     e : "oO",
     T : "u "
 }));
+
 console.log("bi ");
